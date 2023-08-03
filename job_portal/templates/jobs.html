@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment Startup - Jobs</title>
+    <link rel="stylesheet" href="{% static 'css/jobs-style.css' %}"> <!-- Add your custom CSS file for the Jobs page -->
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Recruitment Startup</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'jobs' %}">Jobs</a></li>
+                <li><a href="{% url 'post_job' %}">Post a Job</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <section>
+            <h2>Job Openings</h2>
+            <!-- Job Listings - Add dynamically generated job listings here or hardcode some for demonstration purposes -->
+            <div class="job-listing">
+                <h3>Software Engineer</h3>
+                <p>Company: ABC Tech</p>
+                <p>Location: Bangalore, India</p>
+                <p>Description: We are seeking a skilled software engineer to join our development team...</p>
+                <a href="#" class="apply-button">Apply Now</a>
+            </div>
+
+            <div class="job-listing">
+                <h3>Product Manager</h3>
+                <p>Company: XYZ Solutions</p>
+                <p>Location: San Francisco, USA</p>
+                <p>Description: We are looking for an experienced product manager to lead our product strategy...</p>
+                <a href="#" class="apply-button">Apply Now</a>
+            </div>
+            <!-- End of Job Listings -->
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>Contact us at: contact@recruitmentstartup.com</p>
+    </footer>
+</body>
+
+</html>

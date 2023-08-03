@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment Startup - Home</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Additional styling for header, footer, and other sections can be added here */
+    </style>
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Recruitment Startup</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'jobs' %}">Jobs</a></li>
+                <li><a href="{% url 'post_job' %}">Post a Job</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <section>
+            <h2>Welcome to Our Recruitment Portal</h2>
+            <p>
+                We help companies worldwide find the best talent in the industry.
+                Whether you need software engineers, product managers, data scientists, or any other tech role,
+                we've got you covered.
+            </p>
+            <p>
+                <a href="#">Learn more about our services</a>
+            </p>
+            <p>
+                <a href="#">View our job listings</a>
+            </p>
+        </section>
+        <section class="call-to-action">
+            <h2>Let's get started!</h2>
+            <p>
+                Contact us today to learn more about how we can help you find the perfect candidate for your open role.
+            </p>
+            <a href="#">Contact us</a>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>Contact us at: contact@recruitmentstartup.com</p>
+    </footer>
+</body>
+
+</html>
