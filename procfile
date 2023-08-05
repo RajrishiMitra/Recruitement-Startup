@@ -1,1 +1,0 @@
-web: gunicorn RECRUITMENT_STARTUP.wsgi --log-file -
